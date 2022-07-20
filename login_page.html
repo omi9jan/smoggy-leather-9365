@@ -116,4 +116,23 @@
         // console.log("someone click me")
         window.location.href="google_page.html"
     })
+
+    let details = JSON.parse(localStorage.getItem("Users"));
+
+    document.querySelector("#btn").addEventListener("click",function(){
+        let obj = {
+            personEmail : document.querySelector("#email").value,
+            personPassword : document.querySelector("#password").value,
+        }
+        // console.log(obj);
+        details.forEach(function(ele,index){
+            if(ele.Email == obj.personEmail && ele.Password == obj.personPassword)
+            {
+                window.location.href="navbar.html";
+            }
+            else{
+                alert("Wrong login and password");
+            }
+        })
+    })
 </script>

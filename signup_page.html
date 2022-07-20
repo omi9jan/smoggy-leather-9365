@@ -167,4 +167,21 @@
         console.log("someone click me")
         window.location.href="google_page.html"
     });
+
+    let user_details = JSON.parse(localStorage.getItem("Users")) || [];
+    document.querySelector("#btn").addEventListener("click",function(){
+        let obj = {
+            Email : document.getElementById("email").value,
+            Password : document.getElementById("password").value,
+        }
+        user_details.push(obj);
+        // console.log(user_details)
+        localStorage.setItem("Users",JSON.stringify(user_details))
+        window.location.href="navbar.html";
+        document.getElementById("email").value = ""
+        document.getElementById("password").value = ""
+    })
+
+    
+
 </script>

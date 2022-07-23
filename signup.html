@@ -164,7 +164,7 @@
 <script>
     document.getElementById("logoBtn").addEventListener("click",function(){
         console.log("someone click me")
-        window.location.href="google_page.html"
+        window.location.href="google.html"
     });
 
     let user_details = JSON.parse(localStorage.getItem("Users")) || [];
@@ -176,7 +176,7 @@
         user_details.push(obj);
         // console.log(user_details)
         localStorage.setItem("Users",JSON.stringify(user_details))
-        window.location.href="navbar.html";
+        window.location.href="nav.html";
         document.getElementById("email").value = ""
         document.getElementById("password").value = ""
     })

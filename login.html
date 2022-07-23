@@ -114,7 +114,7 @@
 <script>
     document.querySelector("#logo_btn").addEventListener("click",function(){
         // console.log("someone click me")
-        window.location.href="google_page.html"
+        window.location.href="google.html"
     })
 
     let details = JSON.parse(localStorage.getItem("Users"));
@@ -128,7 +128,7 @@
         details.forEach(function(ele,index){
             if(ele.Email == obj.personEmail && ele.Password == obj.personPassword)
             {
-                window.location.href="navbar.html";
+                window.location.href="nav.html";
             }
             else{
                 alert("Wrong login and password");

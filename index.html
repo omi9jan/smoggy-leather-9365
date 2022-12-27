@@ -22,6 +22,8 @@
             background-color: black;
             color: whitesmoke;
             margin-top: -10PX;
+            margin-bottom: -105px;
+            /* border: 2px solid red; */
         }
         #navbar>div:nth-child(2){
             display: flex;
@@ -56,21 +58,28 @@
             background-color: black;
             border-color: white;
             border-radius: 5px;
-            width: 100px;
+            width: 110px;
             height: 30px;
             font-size: 16px;
             margin-top: 15px;
             cursor: pointer;
+            font-size: 16px;
+            height: 40px;
+            padding-top: 8px;
         }
         #btn>button:nth-child(3){
             background-color: #008275;
             border-color: #008275;
         }
+
+
+
+
+
         #home{
             height: 1200px;
             background-color: #421983;
             color: whitesmoke;
-            border: 2px solid black;
         }
         #home>div:first-child, #home>div:nth-child(2){
             border: 0px solid black;
@@ -605,7 +614,7 @@
             <img src="https://media-s3-us-east-1.ceros.com/walstead/images/2021/10/15/93f1fab9b3adec5be6d8e311abf4715a/semrush-logo.png" alt="logo">
         </div>
         <div>
-            <p style="margin-left: 50px;">Features</p>
+            <p>Features</p>
             <p>Pricing</p>
             <p>Resources  <i class="arrow down"></i></p>
             <p>Company  <i class="arrow down"></i></p>
@@ -614,8 +623,8 @@
         </div>
         <div id="btn">
             <p>EN  <i class="arrow down"></i></p>
-            <button style="padding-bottom:30px;padding-top:10px">Log In</button>
-            <button style="padding-bottom:30px;padding-top:10px; width: 45%">Sign Up</button>
+            <button>Log In</button>
+            <button>Sign Up</button>
         </div>
     </div>
     <div id="home">
@@ -880,8 +889,6 @@
             </div>
         </div>
     </div>
-    <div id="middle-part"></div>
-    <div id="end-part"></div>
 </body>
 </html>
 <script>
@@ -893,8 +900,7 @@
         // console.log("someone click sign up button")
         window.location.href="signup.html"
     })
-    document.querySelector("#navbar>div:nth-child(2)>p").addEventListener("click",function(){
-        // console.log("someone click me")
-        window.location.href="featurespage.html"
-    })
 </script>
+
+
+

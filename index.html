@@ -28,7 +28,7 @@
         #navbar>div:nth-child(2){
             display: flex;
             gap: 50px;
-            margin-left: -40%;
+            margin-left: -35%;
         }
         #navbar>div:nth-child(3){
             display: flex;
@@ -611,10 +611,10 @@
 <body>
     <div id="navbar">
         <div>
-            <img src="https://media-s3-us-east-1.ceros.com/walstead/images/2021/10/15/93f1fab9b3adec5be6d8e311abf4715a/semrush-logo.png" alt="logo">
+            <img id="gotologo" src="https://media-s3-us-east-1.ceros.com/walstead/images/2021/10/15/93f1fab9b3adec5be6d8e311abf4715a/semrush-logo.png" alt="logo">
         </div>
         <div>
-            <p>Features</p>
+            <p id="gotofeature">Features</p>
             <p>Pricing</p>
             <p>Resources  <i class="arrow down"></i></p>
             <p>Company  <i class="arrow down"></i></p>
@@ -900,6 +900,12 @@
         // console.log("someone click sign up button")
         window.location.href="signup.html"
     })
+    document.querySelector("#gotofeature").addEventListener("click",function(){
+        // console.log("someone click sign up button")
+        window.location.href="FEATURESPAGE.html"
+    })
+    
+    
 </script>
 
 
